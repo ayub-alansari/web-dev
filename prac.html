@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="search.css">
+  <script src="https://kit.fontawesome.com/ba287de0c8.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+<body>
+  
+  <i class=" search-icon fas fa-search"></i>
+  <div class="search-screen">
+    <i class="close-icon fas fa-times"></i>
+    
+    <input type="text" class="search-box" placeholder=" start typing ...">
+  </div>
+  <script>
+    document.querySelector(".search-icon").
+    addEventListener('click', function(){
+      document.querySelector(".search-screen").
+      classList.add("active");
+    }
+    )
+    document.querySelector(".close-icon").
+    addEventListener('click', function(){
+      document.querySelector(".search-screen").
+      classList.remove("active");
+    }
+    )
+  </script>
+  
+</body>
+</html>
